@@ -1,4 +1,5 @@
-# PyPlanner (WORK IN PROGRESS)
+![PyPlanner](images/cover.png)
+# PyPlanner (WIP)
 PyPlanner (working title, up for suggestions) is a to-do list, planner, and task tracking system created in Python.
 It is a CLI (command line interface) and does not have a GUI, although I may create one in the future.
 
