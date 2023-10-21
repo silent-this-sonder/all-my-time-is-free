@@ -1,0 +1,14 @@
+__________        __________.__                                     
+\______   \___.__.\______   \  | _____    ____   ____   ___________ 
+ |     ___<   |  | |     ___/  | \__  \  /    \ /    \_/ __ \_  __ \
+ |    |    \___  | |    |   |  |__/ __ \|   |  \   |  \  ___/|  | \/
+ |____|    / ____| |____|   |____(____  /___|  /___|  /\___  >__|   
+           \/                         \/     \/     \/     \/    
+                                    v 1.0.0 by silent-this-sonder
+
+PyPlanner is a command-line application that acts as a to-do list and planner.
+
+    "help" for all available commands
+    "quit" to exit
+    "about" to learn more about PyPlanner
+    "license" for licensing information

@@ -1,0 +1,8 @@
+Available Commands
+
+    HELP
+    QUIT
+    ABOUT
+    LICENSE
+
+    
