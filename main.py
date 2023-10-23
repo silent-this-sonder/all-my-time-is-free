@@ -31,15 +31,13 @@ while True:
             help = open(messages["help"], "r")
             print(help.read())
             help.close()
-            
+
         case "about":
             print("insert something here")
 
         case "license":
             print("Still working on that")
             
-        case "about":
-            print("insert something here")
         case _:
             print(cmd + " is not a recognized command.\nEnter\"help\" for the list of commands.")
 
