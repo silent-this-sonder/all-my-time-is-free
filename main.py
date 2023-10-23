@@ -32,6 +32,8 @@ while True:
             print(help.read())
             help.close()
             
+        case "about":
+            print("insert something here")
         case _:
             print(cmd + " is not a recognized command.\nEnter\"help\" for the list of commands.")
 
