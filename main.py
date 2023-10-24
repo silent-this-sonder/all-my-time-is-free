@@ -1,8 +1,7 @@
 """The main script for this project.  Run this in order to use the tasktracker."""
 
 import os
-from tmods import serialize
-from tmods import tasktrack
+import tmods
 
 # get current directory & directory of messages
 cwd = os.getcwd()
