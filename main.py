@@ -20,7 +20,7 @@ print(welcome.read())
 welcome.close()
 
 while True:
-    cmd = input("Enter a command: ")
+    cmd = input("\nEnter a command: ")
 
     match cmd:
         case "quit":

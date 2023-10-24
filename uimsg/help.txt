@@ -4,5 +4,3 @@ Available Commands
     QUIT
     ABOUT
     LICENSE
-
-    
