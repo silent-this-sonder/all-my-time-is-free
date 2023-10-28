@@ -17,5 +17,8 @@ I had doubts about the name, however, especially as it seemed too generic.  Late
 - [ ] be able to get a list of tasks through the CLI
 - [ ] email reminders
 
+## License
+This project is under the GNU General Public License v3.0.  See [LICENSE](LICENSE) for more information.
+
 ## Contributing
 Will add to this section later.
