@@ -1,5 +1,5 @@
 ![All My Time Is Free](images/cover.png)
-# :alarm-clock: All My Time Is Free (WIP)
+# ⏰ All My Time Is Free (WIP)
 All My Time Is Free is a to-do list, planner, and task tracking system created in Python.
 It is a CLI (command line interface) and does not have a GUI, although I may create one in the future.
 
