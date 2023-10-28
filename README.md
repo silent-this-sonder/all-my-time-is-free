@@ -11,11 +11,11 @@ At around the same time, I wanted to work on coding a "serious" Python project t
 I had doubts about the name, however, especially as it seemed too generic.  Later, I attended a talk where I heard Pope John Paul II's quote, "All my time is free."  I really liked this quote because it reminded me that everything in my schedule was my choice, and I have the free will to do what I want with my time.
 
 ## To Do
-    [X] write to task files
-    [X] directories to group tasks
-    [ ] be able to create tasks through the CLI
-    [ ] be able to get a list of tasks through the CLI
-    [ ] email reminders
+- [X] write to task files
+- [X] directories to group tasks
+- [ ] be able to create tasks through the CLI
+- [ ] be able to get a list of tasks through the CLI
+- [ ] email reminders
 
 ## Contributing
 Will add to this section later.
