@@ -7,7 +7,7 @@ import os
 # save the path to the tasks directory
 TASKS_DIR = os.path.join(os.getcwd(), "tasks")
 
-def task_to_json(task: dict, file):
+def save_task(task: dict, file):
     """Write the task to the .json file."""
     
     with open(file, "w") as f:
