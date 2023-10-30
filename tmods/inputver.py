@@ -2,7 +2,7 @@
 
 import re
 
-def __date_regex(a):
+def __re_date(a):
     date = re.compile(r"""(\d?\d) # month
                       [-/] # separator (- or /)
                       (\d?\d) # day
@@ -19,7 +19,7 @@ def input_date(prompt: str, err=""):
     
     while True:
         answer = input(prompt)
-        match = __date_regex(answer)
+        match = __re_date(answer)
 
         if match:
             month = match[1]
