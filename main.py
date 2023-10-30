@@ -35,7 +35,11 @@ while True:
             print("insert something here")
 
         case "license":
-            print("Still working on that")
+            # print license message
+            print("\n")
+            license = open(os.path.join(cwd, "LICENSE.txt"))
+            print(license.read())
+            license.close()
             
         case _:
             print(cmd + " is not a recognized command.\nEnter\"help\" for the list of commands.")
