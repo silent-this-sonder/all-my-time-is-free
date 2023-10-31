@@ -2,6 +2,7 @@
 
 import re
 
+
 def __re_date(a):
     date = re.compile(r"""(\d?\d) # month
                       [-/] # separator (- or /)
@@ -11,7 +12,8 @@ def __re_date(a):
                       re.VERBOSE)
     match = date.search(a)
     return match
-    
+
+
 def input_date(prompt: str, err=""):
     """Get user input and make sure that it is a date.
         prompt - question to display to user
