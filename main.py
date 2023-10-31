@@ -42,7 +42,7 @@ while True:
             license.close()
             
         case _:
-            print(cmd + " is not a recognized command.\nEnter\"help\" for the list of commands.")
+            print(cmd + " is not a recognized command, or I may not have implemented it yet.\nEnter\"help\" for the list of commands.")
 
     # TODO - add the other cmds
     # TODO - show output
