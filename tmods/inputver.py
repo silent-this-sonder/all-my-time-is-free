@@ -30,3 +30,20 @@ def input_date(prompt: str, err=""):
             return month, day, year
         
         print(err)
+
+
+def input_yn(prompt: str, err=""):
+    """Get user input for a yes/no question.
+        prompt - question to display to user
+        err - optional, displays if the input is invalid."""
+    
+    while True:
+        answer = input(prompt).lower()
+
+        if answer == "yes" or answer == "y":
+            return "yes"
+        elif answer == "no" or answer == "n":
+            return "no"
+        
+        if err != "": # make sure there actually is an error message
+            print(err)
