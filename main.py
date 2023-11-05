@@ -10,7 +10,8 @@ msg_dir = os.path.join(cwd, "uimsg")
 # dictionary of paths to messages
 messages = {
     "welcome": os.path.join(msg_dir, "welcome.txt"),
-    "help": os.path.join(msg_dir, "help.txt")
+    "help": os.path.join(msg_dir, "help.txt"),
+    "license": os.path.join(cwd, "LICENSE.txt")
 }
 
 
@@ -56,6 +57,7 @@ while True:
             license.close()
             
         case _:
+            print("\n")
             print(cmd + " is not a recognized command, or I may not have implemented it yet.\nEnter\"help\" for the list of commands.")
 
     # TODO - add the other cmds

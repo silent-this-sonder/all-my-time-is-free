@@ -2,6 +2,7 @@
 
 import re
 
+
 def __re_date(a):
     date = re.compile(r"""(\d?\d) # month
                       [-/] # separator (- or /)
@@ -11,7 +12,8 @@ def __re_date(a):
                       re.VERBOSE)
     match = date.search(a)
     return match
-    
+
+
 def input_date(prompt: str, err=""):
     """Get user input and make sure that it is a date.
         prompt - question to display to user
@@ -27,4 +29,22 @@ def input_date(prompt: str, err=""):
             year = match[3]
             return month, day, year
         
-        print(err)
+        if err != "": # make sure there actually is an error message
+            print(err)
+
+
+def input_yn(prompt: str, err=""):
+    """Get user input for a yes/no question.
+        prompt - question to display to user
+        err - optional, displays if the input is invalid."""
+    
+    while True:
+        answer = input(prompt).lower()
+
+        if answer == "yes" or answer == "y":
+            return "yes"
+        elif answer == "no" or answer == "n":
+            return "no"
+        
+        if err != "": # make sure there actually is an error message
+            print(err)
