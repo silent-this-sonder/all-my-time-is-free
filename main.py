@@ -28,11 +28,13 @@ while True:
 
         case "help":
             # print help message
+            print("\n")
             help = open(messages["help"], "r")
             print(help.read())
             help.close()
 
         case "about":
+            print("\n")
             print("insert something here")
 
         case "license":
@@ -43,6 +45,7 @@ while True:
             license.close()
             
         case _:
+            print("\n")
             print(cmd + " is not a recognized command, or I may not have implemented it yet.\nEnter\"help\" for the list of commands.")
 
     # TODO - add the other cmds
