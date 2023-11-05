@@ -29,7 +29,8 @@ def input_date(prompt: str, err=""):
             year = match[3]
             return month, day, year
         
-        print(err)
+        if err != "": # make sure there actually is an error message
+            print(err)
 
 
 def input_yn(prompt: str, err=""):
