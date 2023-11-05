@@ -10,7 +10,8 @@ msg_dir = os.path.join(cwd, "uimsg")
 # dictionary of paths to messages
 messages = {
     "welcome": os.path.join(msg_dir, "welcome.txt"),
-    "help": os.path.join(msg_dir, "help.txt")
+    "help": os.path.join(msg_dir, "help.txt"),
+    "license": os.path.join(cwd, "LICENSE.txt")
 }
 
 # print welcome message
@@ -37,7 +38,7 @@ while True:
         case "license":
             # print license message
             print("\n")
-            license = open(os.path.join(cwd, "LICENSE.txt"))
+            license = open(messages["license"])
             print(license.read())
             license.close()
             
