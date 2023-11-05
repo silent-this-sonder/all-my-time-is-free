@@ -39,30 +39,19 @@ while True:
 
         case "help":
             # print help message
-<<<<<<< Updated upstream
-=======
             clear_screen()
->>>>>>> Stashed changes
             help = open(messages["help"], "r")
             print(help.read())
             help.close()
 
         case "about":
-<<<<<<< Updated upstream
-=======
             clear_screen()
->>>>>>> Stashed changes
             print("insert something here")
 
         case "license":
             # print license message
-<<<<<<< Updated upstream
-            print("\n")
-            license = open(os.path.join(cwd, "LICENSE.txt"))
-=======
             clear_screen()
             license = open(messages["license"])
->>>>>>> Stashed changes
             print(license.read())
             license.close()
             
