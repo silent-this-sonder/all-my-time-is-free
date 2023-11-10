@@ -55,6 +55,15 @@ while True:
             license = open(messages["license"])
             print(license.read())
             license.close()
+
+        case "add":
+            clear_screen()
+            print("Not implemented yet")
+            # TODO: ask for task name
+            # TODO: ask for task description
+            # TODO: ask for task project
+            # TODO: ask for task due date
+            # TODO: actually create the task with the args
             
         case _:
             print("\n")

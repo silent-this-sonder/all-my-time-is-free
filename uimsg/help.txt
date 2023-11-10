@@ -4,3 +4,6 @@ Available Commands
     QUIT
     ABOUT
     LICENSE
+
+    ADD
+        create a new task
