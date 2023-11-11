@@ -17,6 +17,7 @@ I had doubts about the name, however, especially as it seemed too generic.  Late
 - [ ] be able to get a list of tasks through the CLI
 - [ ] email reminders
 - [ ] replace the outdated os.path function calls with pathlib ones
+- [ ] follow the instructions in the License file
 
 ## License
 This project is under the GNU General Public License v3.0.  See [LICENSE](LICENSE) for more information.
