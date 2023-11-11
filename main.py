@@ -2,7 +2,7 @@
 
 import datetime
 import os
-from tmods import inputver, tasktrack
+from tmods import inputver, serialize, tasktrack
 
 # get current directory & directory of messages
 cwd = os.getcwd()
@@ -72,6 +72,11 @@ while True:
             )
 
             # TODO: ask for task project
+            project = inputver.valid_input(
+                "\nWhich project is this task in?"
+                # TODO: make sure the project exists
+                # TODO: maybe display a list of projects?
+            )
 
             # get current date & ask for task due date
             today = str(datetime.date.today())
@@ -85,10 +90,15 @@ while True:
                 today,
                 duedate,
                 desc,
-                "tasks" # placeholder project until I actually do the thing
+                project
             )
 
             # TODO: dump the taskdict into a json in the correct dict.
+            serialize.save_task(taskdict,
+                                # make the full path to the project directory
+                                os.path.join(serialize.TASKS_DIR, project),
+                                # add .json extension to the file name
+                                name + ".json")
             
         case _:
             print("\n")
