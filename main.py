@@ -1,7 +1,8 @@
 """The main script for this project.  Run this in order to use the tasktracker."""
 
+import datetime
 import os
-import tmods
+from tmods import inputver, tasktrack
 
 # get current directory & directory of messages
 cwd = os.getcwd()
@@ -58,12 +59,36 @@ while True:
 
         case "add":
             clear_screen()
-            print("Not implemented yet")
-            # TODO: ask for task name
-            # TODO: ask for task description
+
+            # ask for task name
+            name = inputver.valid_input(
+                "\nWhat is the name of the task?",
+                16)
+            
+            # ask for task description
+            desc = inputver.valid_input(
+                "\nProvide a description of the task.",
+                512
+            )
+
             # TODO: ask for task project
-            # TODO: ask for task due date
+
+            # get current date & ask for task due date
+            today = str(datetime.date.today())
+            duedate = inputver.input_date(
+                "\nWhen is this due? Use the format MM-DD-YYYY",
+                "Please use the format MM-DD-YYYY")
+            
             # TODO: actually create the task with the args
+            taskdict = tasktrack.create_taskdict(
+                name,
+                today,
+                duedate,
+                desc,
+                "tasks" # placeholder project until I actually do the thing
+            )
+
+            # TODO: dump the taskdict into a json in the correct dict.
             
         case _:
             print("\n")
