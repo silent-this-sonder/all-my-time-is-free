@@ -14,15 +14,18 @@ def __re_date(a):
     return match
 
 
-def valid_input(prompt):
+def valid_input(prompt, maxLength=-1):
     """Get user input and make sure it is not empty.
-        prompt - question to display to user."""
+        prompt - question to display to user
+        maxLength - maximum character count, defaults to -1 (no max)"""
     
     while True:
         answer = input(prompt).strip()
 
         if answer == "": # empty string
             print("Please enter a non-empty string.")
+        elif len(answer) < maxLength:
+            print("Please keep your answer under " + str(maxLength))
         else:
             return answer
         
