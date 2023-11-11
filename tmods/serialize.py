@@ -8,9 +8,10 @@ import os
 TASKS_DIR = os.path.join(os.getcwd(), "tasks")
 
 
-def save_task(task: dict, file):
+def save_task(task: dict, project, file):
     """Write the task to the .json file."""
     
+    file = os.path.join(project, file)
     with open(file, "w") as f:
         json_data = json.dump(task, f)
     f.close()
