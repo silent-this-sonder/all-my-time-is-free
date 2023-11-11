@@ -43,7 +43,7 @@ def input_date(prompt: str, err=""):
             month = match[1]
             day = match[2]
             year = match[3]
-            return month, day, year
+            return year + "-" + month + "-" + day
         
         if err != "": # make sure there actually is an error message
             print(err)
