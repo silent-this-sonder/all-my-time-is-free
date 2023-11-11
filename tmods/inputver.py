@@ -14,6 +14,19 @@ def __re_date(a):
     return match
 
 
+def valid_input(prompt):
+    """Get user input and make sure it is not empty.
+        prompt - question to display to user."""
+    
+    while True:
+        answer = input(prompt).strip()
+
+        if answer == "": # empty string
+            print("Please enter a non-empty string.")
+        else:
+            return answer
+        
+
 def input_date(prompt: str, err=""):
     """Get user input and make sure that it is a date.
         prompt - question to display to user
