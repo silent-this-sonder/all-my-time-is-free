@@ -33,7 +33,7 @@ def input_date(prompt: str, err=""):
         err - optional, what to display if the input is invalid"""
     
     while True:
-        answer = input(prompt)
+        answer = valid_input(prompt)
         match = __re_date(answer)
 
         if match:
@@ -52,7 +52,7 @@ def input_yn(prompt: str, err=""):
         err - optional, displays if the input is invalid."""
     
     while True:
-        answer = input(prompt).lower()
+        answer = valid_input(prompt).lower()
 
         if answer == "yes" or answer == "y":
             return "yes"
