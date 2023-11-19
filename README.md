@@ -11,14 +11,26 @@ At around the same time, I wanted to work on coding a "serious" Python project t
 I had doubts about the name, however, especially as it seemed too generic.  Later, I attended a talk where I heard Pope John Paul II's quote, "All my time is free."  I really liked this quote because it reminded me that everything in my schedule was my choice, and I have the free will to do what I want with my time.
 
 ## To Do
+### Main Features
 - [X] write to task files
 - [X] directories to group tasks
-- [ ] be able to create tasks through the CLI
+- [X] be able to create tasks through the CLI
+- [ ] create projects through the CLI
+- [ ] make sure that a project exists before adding a task to it
+- [ ] define priorities for tasks
 - [ ] be able to get a list of tasks through the CLI
+- [ ] fix spacing in the CLI input questions
+
+### Bonus Features
+- [ ] create a schedule based on tasks
 - [ ] email reminders
+
+### Cleanup
+- [ ] optimizations
 - [ ] replace the outdated os.path function calls with pathlib ones
 - [ ] follow the instructions in the License file
 - [ ] edit everything to comply with OOP principles and PEP8
+- [ ] turn everything into an .exe
 
 ## License
 This project is under the GNU General Public License v3.0.  See [LICENSE](LICENSE) for more information.
