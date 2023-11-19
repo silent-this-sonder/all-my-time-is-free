@@ -24,7 +24,7 @@ def valid_input(prompt, maxLength=-1):
 
         if answer == "": # empty string
             print("Please enter a non-empty string.")
-        elif len(answer) > maxLength and maxLength != 0:
+        elif len(answer) > maxLength and maxLength != -1:
             print("Please keep your answer under " + str(maxLength))
         else:
             return answer
