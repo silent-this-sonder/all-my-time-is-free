@@ -15,11 +15,11 @@ I had doubts about the name, however, especially as it seemed too generic.  Late
 - [X] write to task files
 - [X] directories to group tasks
 - [X] be able to create tasks through the CLI
+- [X] fix spacing in the CLI input questions
 - [ ] create projects through the CLI
 - [ ] make sure that a project exists before adding a task to it
 - [ ] define priorities for tasks
 - [ ] be able to get a list of tasks through the CLI
-- [ ] fix spacing in the CLI input questions
 
 ### Bonus Features
 - [ ] create a schedule based on tasks

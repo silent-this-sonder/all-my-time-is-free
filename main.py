@@ -62,18 +62,18 @@ while True:
 
             # ask for task name
             name = inputver.valid_input(
-                "\nWhat is the name of the task?",
+                "\nWhat is the name of the task? ",
                 16)
             
             # ask for task description
             desc = inputver.valid_input(
-                "\nProvide a description of the task.",
+                "\nProvide a description of the task: ",
                 512
             )
 
             # TODO: ask for task project
             project = inputver.valid_input(
-                "\nWhich project is this task in?"
+                "\nWhich project is this task in? "
                 # TODO: make sure the project exists
                 # TODO: maybe display a list of projects?
             )
@@ -82,7 +82,7 @@ while True:
             today = str(datetime.date.today())
             duedate = inputver.input_date(
                 "\nWhen is this due? Use the format MM-DD-YYYY",
-                "Please use the format MM-DD-YYYY")
+                "Please use the format MM-DD-YYYY: ")
             
             # TODO: actually create the task with the args
             taskdict = tasktrack.create_taskdict(
