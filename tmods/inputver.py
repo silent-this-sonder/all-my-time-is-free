@@ -14,7 +14,7 @@ def __re_date(a):
     return match
 
 
-def valid_input(prompt, maxLength=-1):
+def valid_input(prompt, maxLength=0):
     """Get user input and make sure it is not empty.
         prompt - question to display to user
         maxLength - maximum character count, defaults to -1 (no max)"""
