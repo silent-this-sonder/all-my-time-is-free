@@ -84,7 +84,7 @@ while True:
                 "\nWhen is this due? Use the format MM-DD-YYYY",
                 "Please use the format MM-DD-YYYY: ")
             
-            # TODO: actually create the task with the args
+            # actually create the task with the args
             taskdict = tasktrack.create_taskdict(
                 name,
                 today,
@@ -93,7 +93,7 @@ while True:
                 project
             )
 
-            # TODO: dump the taskdict into a json in the correct dict.
+            # dump the taskdict into a json in the correct folder.
             serialize.save_task(taskdict,
                                 # make the full path to the project directory
                                 os.path.join(serialize.TASKS_DIR, project),
