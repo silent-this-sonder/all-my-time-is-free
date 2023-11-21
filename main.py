@@ -100,6 +100,14 @@ while True:
                                 # add .json extension to the file name
                                 name + ".json")
             
+        case "new project":
+            clear_screen()
+
+            # TODO: ask for title
+            # TODO: ask for description
+            # TODO: attempt to create the directory
+            # TODO: return a message if success or fail
+            
         case _:
             print("\n")
             print(cmd + " is not a recognized command, or I may not have implemented it yet.\nEnter\"help\" for the list of commands.")
