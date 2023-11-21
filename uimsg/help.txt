@@ -5,5 +5,5 @@ Available Commands
     ABOUT
     LICENSE
 
-    ADD
+    NEW TASK
         create a new task

@@ -57,7 +57,7 @@ while True:
             print(license.read())
             license.close()
 
-        case "add":
+        case "new task":
             clear_screen()
 
             # ask for task name
