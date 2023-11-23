@@ -28,9 +28,8 @@ def clear_screen():
 
 
 # print welcome message
-welcome = open(messages["welcome"], "r")
-print(welcome.read())
-welcome.close()
+with open(messages["welcome"], "r") as f:
+    print(f.read())
 
 while True:
     cmd = input("\nEnter a command: ")
@@ -42,9 +41,8 @@ while True:
         case "help":
             # print help message
             clear_screen()
-            help = open(messages["help"], "r")
-            print(help.read())
-            help.close()
+            with open(messages["help"], "r") as f:
+                print(f.read())
 
         case "about":
             clear_screen()
@@ -53,9 +51,8 @@ while True:
         case "license":
             # print license message
             clear_screen()
-            license = open(messages["license"])
-            print(license.read())
-            license.close()
+            with open(messages["license"], "r") as f:
+                print(f.read())
 
         case "new task":
             clear_screen()
