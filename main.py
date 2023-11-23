@@ -81,6 +81,8 @@ while True:
                 "\nWhen is this due? Use the format MM-DD-YYYY",
                 "Please use the format MM-DD-YYYY: ")
             
+            # TODO: ask for task priority
+            
             # actually create the task with the args
             taskdict = tasktrack.create_taskdict(
                 name,
