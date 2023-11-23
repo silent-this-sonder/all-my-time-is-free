@@ -100,8 +100,16 @@ while True:
         case "new project":
             clear_screen()
 
-            # TODO: ask for title
-            # TODO: ask for description
+            # ask for name
+            name = inputver.valid_input(
+                "\nWhat is the name of the project? ",
+                16)
+            
+            # ask for description
+            desc = inputver.valid_input(
+                "\nProvide a description of the project: ",
+                512)
+
             # TODO: attempt to create the directory
             # TODO: return a message if success or fail
             
