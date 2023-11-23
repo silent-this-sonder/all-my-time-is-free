@@ -14,7 +14,6 @@ def save_task(task: dict, project, file):
     file = os.path.join(project, file)
     with open(file, "w") as f:
         json_data = json.dump(task, f)
-    f.close()
 
     return json_data
 
@@ -41,4 +40,3 @@ def create_project(title: str, desc=""):
 
     with open(project_f, "w") as f:
         json.dump(project_meta, f)
-    f.close()
